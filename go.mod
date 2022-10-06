@@ -1,4 +1,4 @@
-module github.com/mingjingc/abi-decoder
+module github.com/meterio/abi-decoder
 
 require (
 	github.com/ethereum/go-ethereum v1.10.21

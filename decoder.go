@@ -44,6 +44,10 @@ func (d *ABIDecoder) SetABI(contractAbi string) {
 	d.myabi = myabi
 }
 
+func (d *ABIDecoder) SetMyABI(contractAbi abi.ABI) {
+	d.myabi = contractAbi
+}
+
 func (d *ABIDecoder) DecodeMethod(txData string) (MethodData, error) {
 	if strings.HasPrefix(txData, "0x") {
 		txData = txData[2:]
